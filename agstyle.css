@@ -1,0 +1,1554 @@
+@font-face {
+  font-family: "ntbold";
+  src: url('NeutraText-Bold.otf') format('opentype');
+}
+@font-face {
+  font-family: "ntdemi";
+  src: url('NeutraText-Demi.otf') format('opentype');
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "ntdemi";
+  text-align: center;
+  overflow-x: hidden;
+}
+
+.ipadhead{
+  display: none;
+}
+.mboxA{display: none;}.mboxB{display: none;}.mbox1{display: none;}
+.msimp{display: none;}.msimp2{display: none;}.mwrap{display: none;}
+/* HEADER Section */
+
+.mainhead {
+  height: 100vh;
+  align-items: center;
+  color:#fff;
+}
+
+.pivotpic {
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.pivotpic img {
+  width: 100vw;
+  height: auto;
+}
+
+.header-overlay{
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  background:#474C55;
+  z-index: 1;
+  opacity: .40;
+}
+
+h1{
+  font-family: 'ntbold';
+}
+
+.headstuff {
+  display: inline-grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 15vh 30vh 40vh;
+  grid-gap: 0rem;
+  grid-auto-rows: minmax(10px, auto);
+  z-index: 3;
+}
+
+#logo{
+  z-index: 3;
+  display: flex;
+  justify-self: center;
+  align-self: end;
+  width: 25vw;
+  padding-top: 3rem;
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+
+#agmain {
+  font-size: 9vw;
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  align-self: start;
+  margin-top: 0;
+  z-index: 3;
+  text-shadow:0px 4px 3px rgba(0,0,0,0.4),
+            0px 8px 13px rgba(0,0,0,0.1),
+            0px 18px 23px rgba(0,0,0,0.1);  
+}
+
+.introp{
+  z-index: 3;
+  position: absolute;
+  left: 5vw;
+  bottom: 15vh;
+  font-size: 2.5vw;
+  font-family: 'ntdemi';
+  text-align: left;
+  text-shadow:0px 4px 3px rgba(0,0,0,0.4),
+            0px 8px 13px rgba(0,0,0,0.1),
+            0px 18px 23px rgba(0,0,0,0.1);  
+}
+
+#intro1 {
+  margin-block-end: 1.5rem;
+  position: relative;
+}
+
+#intro1::after {
+  display: inline-block;
+  content: '';
+  width: 30%;
+  height: 1.5px;
+  background: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin-top: 5px;
+}
+
+#intro2 {
+  margin-block-start: 0;
+}
+
+
+/* PRODUCT SECTION */
+
+
+.boxA{
+  position: relative;
+  overflow: hidden;
+}
+
+.boxA img{
+  width: 100%;
+  height: auto;
+}
+
+.boxB{
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  height: 100%;
+}
+
+.boxC{
+  width: 50vw;
+  height: 100%;
+  text-align: center;
+  margin-top: 15vh;
+}
+
+.boxC img{
+  height: 16vh;
+  width: auto;
+  margin-bottom: 4rem;
+}
+
+.boxC h2{
+  font-family: 'ntbold';
+  font-size: 8vh;
+  color: white;
+  padding: 0 3vw;
+  margin: 0;
+}
+
+.boxC p{
+  font-size: 4vh;
+  padding: 2vh 14vw;
+  color: white;
+  font-weight: 100;
+}
+
+.boxD{
+  width: 50vw;
+  height: 100%;
+  text-align: center;
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.boxD img{
+  height: 90%;
+  width: auto;
+}
+
+
+/* APP SECTION */
+
+.box1{
+  position: relative;
+  overflow: hidden;
+}
+
+.box1 img{
+  width: 100%;
+  height: auto;
+}
+
+.box2{
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  height: 100%;
+}
+
+.box3{
+  width: 50vw;
+}
+
+.box4{
+  width: 50vw;
+  text-align: center;
+  height: 100%;
+}
+
+.box4 img{
+  height: 12vh;
+  width: auto;
+  margin-top: 10rem;
+  margin-bottom: 6vh;
+}
+
+.box4 h2{
+  font-size: 4vw;
+  color: white;
+  margin: 0 5vw;
+}
+
+.box4 p{
+  font-size: 1.5vw;
+  padding: 2em 4em;
+  color: white;
+  font-weight: 100;
+}
+
+
+/* SIMPLIFY SECTION */
+
+.wrapper{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+  background-image: url('bf2.png');
+  background-size: 100%;
+}
+
+.s1{
+  grid-column: 1 / 4;
+  grid-row: 1;
+  font-size: 10vw;
+  margin-bottom: 2vh;
+  color: white;
+}
+
+.midbox{
+  color: white;
+}
+
+.midbox h4{
+  font-size: 3vw;
+  text-transform: uppercase;
+}
+
+.midbox p{
+  font-size: 1.5vw;
+  padding: 3vh 4vw;
+}
+
+.midbox img{
+  width: 7vw;
+  height: auto;
+}
+
+.s2{
+  grid-column: 1 / 2;
+  grid-row: 2;
+  border-right: 3px solid white;
+}
+
+.s3{
+  grid-column: 2 / 3;
+  grid-row: 2;
+  border-right: 3px solid white;
+}
+
+.s3 p{
+  padding-bottom: 6.5vh;
+}
+
+.s4{
+  grid-column: 3 / 4;
+  grid-row: 2;
+}
+
+.s4 p{
+  padding-bottom: 8.5vh;
+}
+
+.s5{
+  grid-column: 1 / 4;
+  grid-row: 3;
+  color: white;
+  margin: 12vh 0 0 0;
+}
+
+.s5 h3{
+  font-size: 4.5vw;
+  text-transform: uppercase;
+}
+
+.s5 p {
+  font-size: 2vw;
+  padding: 0 15vw;
+}
+
+.ag2 {
+  font-family: 'ntdemi';
+  font-size: 2.5vw;
+  border-top: solid 2px;
+  display: inline-block;
+  padding: 5vh 5vh;
+  margin-top: 6vh;  
+  color: white;
+}
+
+.wrap-sys{
+  display: grid;
+  grid-template: repeat(2, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+  background-color: rgb(0, 54, 96);
+  color: white;
+}
+
+.sys1{
+  grid-column: 1 / 2;
+  grid-row: 1;
+}
+
+.sys1 h2{
+  font-size: 4.5vw;
+  text-transform: uppercase;
+  margin-top: 5vh;
+}
+
+.pivot h4{
+  font-size: 3vw;
+  text-transform: uppercase;
+}
+
+.pivot p{
+  font-size: 2vw;
+  margin-top: 2vh;
+}
+
+.sys2{
+  grid-column: 1 / 2;
+  grid-row: 2;
+}
+
+.sys3{
+  grid-column: 1 / 2;
+  grid-row: 3;
+}
+
+.sys4{
+  grid-column: 1 / 2;
+  grid-row: 4;
+}
+
+.sys5{
+  grid-column: 1 / 2;
+  grid-row: 5;
+}
+
+.sys6{
+  grid-column: 2 / 3;
+  grid-row: 1 / 6;
+}
+
+.sys6 img{
+  height: 100%;
+  width: 100%;
+}
+
+.tri{
+  color: rgb(128, 154, 175);
+  padding-top: 1vh;
+}
+
+/* FOOTER SECTION */
+
+.fall{
+  background-color: rgb(0, 54, 96);
+  color: white;
+  padding-bottom: 5rem;
+}
+
+.fall h1{
+  margin: 0;
+  padding: 3vh 0;
+  text-transform: capitalize;
+  font-size: 3vw;
+}
+
+#LMbutton{
+  background-color: orange;
+  font-size: 4rem;
+  padding: .2rem 1rem;
+  border-radius: 100px;
+  border-style: none;
+}
+
+/* ----------- iPad Pro ----------- */
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1366px) 
+  {
+
+  .mainhead{
+    display: none;
+  }
+
+  .ipadhead{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1px;
+    grid-auto-rows: minmax(100px, auto);
+    background-image: url('mbg.jpg');
+    background-size: cover;
+    background-position: center left;
+    color: white;
+    font-size: 6rem;
+  }
+
+  .ipm2{
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+
+  .ipm2 img {
+    width: 10rem;
+    height: auto;
+    padding-top: 5vh;
+  }
+
+  .ipm3 {
+    grid-column: 1 / 4;
+    grid-row: 2 / 3;
+    font-size: 5rem;
+  }
+
+  .ipm4{
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    font-size: 20rem;
+    align-self: top;
+  }
+
+  .ipm5{
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+  }
+
+  .bbg{
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+  }
+
+  .ipm6{
+    font-size: 3rem;
+    border-top: white 1px solid;
+    display: inline-block;
+    margin: 5vh 0;  
+  }
+
+  /* CONVENIENCE SECTION */
+
+  .boxC {
+    margin-top: 5rem;
+    width: 50vw;
+    height: auto;
+  }
+
+  .boxC img{
+    height: 10rem;
+  }
+
+  .boxC h2{
+    font-size: 4rem;
+  }
+
+  .boxC p {
+    font-size: 2rem;
+  }
+
+  .ag2{
+    padding: 1rem;
+    margin-top: 0;
+  }
+
+  .s5{
+    margin-top: 1rem;
+    padding-bottom: 3rem;
+  }
+
+  .fall h1{
+    font-size: 12rem;
+  }
+}
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1366px) 
+  and (orientation: portrait) 
+  /* and (-webkit-min-device-pixel-ratio: 1.5)  */
+  {
+    
+    .box4 img{
+      height: 10rem;
+      margin: 3vh 0;
+    }
+
+    .box4 h2{
+      font-size: 4rem;
+    }
+
+    .box4 p{
+      font-size: 2rem;
+    }
+
+    .midbox p{
+      padding: 0;
+    }
+
+    .s4 img{
+      width: 9vw;
+      padding-top: .5vh;
+    }
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1366px) 
+  and (orientation: landscape) 
+  /* and (-webkit-min-device-pixel-ratio: 1.5) */
+   {
+
+    .ipadhead{
+      background-position: center left;
+    }
+    .boxC {
+      margin-top: 15rem;
+    }
+  
+    .boxC img{
+      height: 15rem;
+    }
+  
+    .boxC h2{
+      font-size: 6rem;
+    }
+  
+    .boxC p {
+      font-size: 2.5rem;
+    }
+}
+
+
+
+/* IPAD */
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1020px)
+ { 
+  .mainhead{
+    display: none;
+  }
+
+  .ipadhead{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1px;
+    grid-auto-rows: minmax(100px, auto);
+    background-image: url('mbg.jpg');
+    background-size: cover;
+    background-position: center left;
+    color: white;
+    font-size: 6rem;
+    }
+
+  .ipm2{
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+
+  .ipm2 img {
+    width: 10rem;
+    height: auto;
+    padding-top: 5vh;
+  }
+
+  .ipm3 {
+    grid-column: 1 / 4;
+    grid-row: 2 / 3;
+    font-size: 5rem;
+  }
+
+  .ipm4{
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    font-size: 20rem;
+    align-self: top;
+  }
+
+  .ipm5{
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+  }
+
+  .bbg{
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+  }
+
+  .ipm6{
+    font-size: 3rem;
+    border-top: white 1px solid;
+    display: inline-block;
+    margin: 5vh 0;  
+  }
+
+  .mboxA{
+    padding-bottom: 5rem;
+  }
+
+  .mboxA2 h2{
+    font-size: 4rem;
+    margin: 0 6rem;
+  }
+
+  /* CONVENIENCE SECTION */
+
+  .boxC {
+    margin-top: 5rem;
+  }
+
+  .boxC img{
+    height: 8rem;
+  }
+
+  .boxC h2{
+    font-size: 4rem;
+  }
+
+  .boxC p {
+    font-size: 2rem;
+  }
+
+  .s5{
+    margin-top: 1vh;
+  }
+
+  .fall h1{
+    font-size: 8rem;
+  }
+
+  .ag2{
+    margin-top: 2vh;
+    padding: 1vh;
+  }
+}
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1023px) 
+and (orientation : portrait) { 
+
+  .boxC h2{
+    font-size: 3rem;
+  }
+
+  .boxC p {
+    font-size: 1.5rem;
+    padding: 1rem 3rem;
+  }
+ 
+  .box4 img{
+    height: 6rem;
+    margin: 3vh 0;
+  }
+
+  .box4 h2{
+    font-size: 3rem;
+  }
+
+  .box4 p{
+    font-size: 1.5rem;
+  }
+
+  .midbox p{
+    padding: 0;
+  }
+
+  .s4 img{
+    width: 9vw;
+    padding-top: .5vh;
+  }
+ }
+
+ @media only screen 
+and (device-width : 1024px) 
+and (device-height : 768px) 
+and (orientation : landscape) { 
+
+  .boxC {
+    margin-top: 4rem;
+  }
+
+  .boxC img{
+    height: 10rem;
+  }
+
+  .boxC h2{
+    font-size: 4rem;
+  }
+
+  .boxC p {
+    font-size: 2rem;
+  }
+}
+
+ /* MOBILE */
+
+ @media only screen 
+    and (device-width : 375px) 
+    and (device-height : 812px) 
+    and (-webkit-device-pixel-ratio : 3)
+    and (orientation:portrait)
+{ 
+  
+  body{
+    -webkit-margin-before:0em;
+    -webkit-margin-after:0em;
+  }
+
+  .mainhead{
+    display: none;
+  }
+
+  .ipadhead{
+    display: grid;
+    grid-template-columns: repeat(3, 10% 80% 10%);
+    grid-gap: 0;
+    grid-auto-rows: minmax(10px, auto);
+    background-image: url('mbgx.png');
+    background-size: 100% 80%;
+    color: white;
+    font-size: 3rem;
+    }
+
+  .ipm2{
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+
+  .ipm2 img {
+    width: 15rem;
+    height: auto;
+  }
+
+  .ipm3 {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    align-self: end;
+    font-family: ntbold;
+  }
+
+  .ipm4{
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    font-size: 13rem;
+    font-family: ntbold;
+    margin-top: -4rem;
+  }
+
+  .ipm5{
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+  }
+
+  .bbg{
+    grid-column: 1 / 4;
+    grid-row: 5 / 6;
+    background-color: rgb(0, 54, 96);
+    align-self: end;
+  }
+
+  .ipm6{
+    grid-column: 2 / 3;
+    grid-row: 5 / 6;
+    font-size: 2.8rem;
+    text-transform: uppercase;
+    display: inline-block;
+    margin: 0 2rem;
+  }
+
+  .boxA{
+    display: none;
+  }
+
+  .mboxA{
+    display: block;
+    background-image: url('mfcir.png');
+    color: white;
+  }
+
+  .mboxA img {
+    width: 30vw;
+    margin-top: 3vw;
+  }
+
+  .mboxA h2{
+    font-size: 5rem;
+  }
+
+  .mboxA p{
+    font-size: 2.5rem;
+    padding: 0 3vw;
+  }
+
+  .mboxB{
+    display: block;
+    background-color: rgb(128,154, 175);
+  }
+
+  .mboxB img{
+    width: 80vw;
+    padding-top: 2vh;
+  }
+
+  .box1{
+    display: none;
+  }
+
+  .mbox1{
+    display: block;
+    background-image: url('mfieldbg.png');
+    background: cover;
+    color: white;
+  }
+
+  .mbox1 img {
+    width: 30vw;
+    padding-top: 2vh;
+  }
+
+  .mbox1 h2{
+    font-size: 5rem;
+  }
+
+  .mbox1 p{
+    font-size: 2.5rem;
+    padding: 0 3vw;
+  }
+
+  .wrapper.simplify{
+    display: none;
+  }
+
+  .msimp{
+    display: block;
+    background-color: rgb(0, 54, 96);
+    color: white;
+  }
+
+  .msimp h2{
+    font-size: 8rem;
+    font-weight: 300;
+    margin-top: 0vh;
+    padding-top: 2vh;
+  }
+
+  .msimp h4 {
+    font-size: 4rem;
+    text-transform: uppercase;
+  }
+
+  .msimp p{
+    font-size: 2.5rem;
+    margin: 0 3vw;
+  }
+
+  .msimp img {
+    width: 30vw;
+    margin: 6vh 0;
+  }
+
+  .msimp2 {
+    display: block;
+    background-image: url('mfieldroad.png');
+    background-size: 100%;
+    color:white;
+  }
+
+  .msimp2 h3{
+    font-size: 4rem;
+    margin-top: 0vh;
+    padding-top: 2vh;
+    text-transform: uppercase;
+  }
+
+  .msimp2 p{
+    font-size: 1.5rem;
+    padding: 1vh 3vw;
+  }
+
+  .ag2{
+    padding: 2vh 2vw;
+    margin-top: 2vh;    
+  }
+
+  .wrap-sys{
+    display: none;
+  }
+
+  .mwrap{
+    background-color: rgb(0, 54, 96);
+    color: white;
+  }
+
+  .mwrap h2{
+    font-size: 4rem;
+    margin-top: 0vh;
+    padding-top: 2vh;
+  }
+
+  .mwrap h4{
+    font-size: 2.5rem;
+    padding-top: 2vh;
+  }
+
+  .mwrap p{
+    font-size: 1.5rem;
+  }
+
+  .fall h1{
+    font-size: 5rem;
+  }
+
+  .fall h3{
+    margin-bottom: 0vh;
+    padding-bottom: 3vh;
+  }
+}
+
+
+/* IPHONE 6/7/8 PLUS */
+@media only screen 
+and (min-device-width : 414px) 
+and (max-device-width : 736px) { 
+
+  
+}
+
+/* IPHONE 6/7/8 */
+@media only screen 
+    and (min-device-width : 350px) 
+    and (max-device-width : 667px) 
+    and (orientation: portrait)
+   {
+
+  body{
+    -webkit-margin-before:0em;
+    -webkit-margin-after:0em;
+  }
+
+  .mainhead{
+    display: none;
+  }
+
+  .ipadhead{
+    display: grid;
+    grid-template-columns: repeat(3, 10% 80% 10%);
+    grid-gap: 0;
+    grid-auto-rows: minmax(0px, auto);
+    background-image: url('mbg.jpg');
+    background-size: cover;
+    height: 100vh;
+    color: white;
+    font-size: 2.7rem;
+    }
+
+  .ipm2{
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    padding-top: 3rem;
+  }
+
+  .ipm2 img {
+    width: 15rem;
+    height: auto;
+  }
+
+  .ipm3 {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    align-self: end;
+    font-family: ntbold;
+  }
+
+  .ipm4{
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    font-size: 16rem;
+    font-family: ntbold;
+    margin-top: -4rem;
+  }
+
+  .bbg{
+    grid-column: 1 / 4;
+    grid-row: 4 / 5;
+    background-color: rgb(0, 54, 96);
+    align-self: end;
+  }
+
+  .ipm6{
+    grid-column: 2 / 3;
+    font-size: 2.8rem;
+    text-transform: uppercase;
+    display: inline-block;
+    margin: 0 2rem;
+  }
+
+  .boxA{
+    display: none;
+  }
+
+  .mboxA{
+    display: block;
+    color: white;
+    background-image: url('mfcir.png');
+    background-size: 100%;
+  }
+
+  .mboxA2{
+    height: 100%;
+    margin: 0em 5rem;
+    padding: 6rem 0;
+  }
+
+  .mboxA img {
+    height: 7.25rem;
+    width: auto;
+  }
+
+  .mboxA h2{
+    font-size: 3rem;
+    font-family: ntbold;
+  }
+
+  .mboxA p{
+    font-size: 1.5rem;
+  }
+
+  .mboxB{
+    display: block;
+    background-color: rgb(0, 54, 96);
+  }
+
+  .mboxB img{
+    width: 80vw;
+    padding-top: 4rem;
+  }
+
+  .box1{
+    display: none;
+  }
+
+  .mbox1{
+    display: block;
+    background-image: url('mfieldbg.png');
+    background-size: 100%;
+    background: cover;
+    color: white;
+  }
+
+  .mbox1A{
+    height: 100%;
+    margin: 0em 4rem;
+    padding: 6rem 0;
+
+  }
+
+  .mbox1 img {
+    height: 7.25rem;
+    width: auto;
+  }
+
+  .mbox1 h2{
+    font-size: 3rem;
+    font-family: ntbold;
+  }
+
+  .mbox1 p{
+    font-size: 1.5rem;
+    font-family: ntdemi;
+    padding-top: 1rem;
+  }
+
+  .wrapper.simplify{
+    display: none;
+  }
+
+  .msimp{
+    display: block;
+    background-color: rgb(0, 54, 96);
+    color: white;
+    padding-bottom: 5rem;
+  }
+
+  .msimp h2{
+    font-size: 3rem;
+    font-weight: 300;
+    margin-top: 0vh;
+    padding-top: 4rem;
+  }
+
+  .msimp h4 {
+    font-size: 2rem;
+    text-transform: uppercase;
+  }
+
+  .msimp p{
+    font-size: 1.5rem;
+    margin: 0 5rem;
+  }
+
+  .msimp img {
+    width: 8rem;
+    margin: 5rem 0 2rem 0;
+  }
+
+  .msimp2 {
+    display: block;
+    background-image: url('mfieldroad.png');
+    background-size: 100%;
+    color:white;
+  }
+
+  .msimp2 h3{
+    font-size: 3rem;
+    margin-top: 0vh;
+    padding-top: 5rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+  }
+
+  .msimp2 p{
+    font-size: 1.5rem;
+    margin: 0 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .ag2{
+    padding: 2vh 2vw;
+    margin-top: 2vh;    
+  }
+
+  .wrap-sys{
+    display: none;
+  }
+
+  .mwrap{
+    display: block;
+    background-color: rgb(0, 54, 96);
+    color: white;
+  }
+
+  .mwrap h2{
+    font-size: 3rem;
+    padding: 3rem 0;
+  }
+
+  .mwrap h4{
+    font-size: 1.9rem;
+    padding: 0;
+    margin: 0;
+  }
+
+  .mwrap p{
+    font-size: 1.5rem;
+    padding: .5rem 0;
+    margin: 0;
+    font-family: 'ntdemi';
+    font-weight: 100;
+  }
+
+  .sys1 h2{
+    margin-top: 0;
+  }
+
+  .sys4 p {
+    padding-bottom: 3rem;
+  }
+
+  .tri{
+    padding: 2rem 0;
+    font-size: 3rem;
+    margin: 0;
+  }
+
+  .fall h1{
+    font-size: 3rem;
+  }
+
+  .fall h3{
+    font-size: 1rem;
+    margin-bottom: 0vh;
+    /* padding-bottom: 3vh; */
+  }
+
+  #LMbutton{
+    font-size: 2rem;
+  }
+}
+
+@media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 736px) 
+    and (orientation: landscape)
+{
+
+  .mainhead {
+    display: none;
+  }
+
+  .ipadhead{
+    display: grid;
+    grid-template-columns: repeat(3, 10% 80% 10%);
+    grid-gap: 0;
+    grid-auto-rows: minmax(0px, auto);
+    background-image: url('mbg.jpg');
+    background-size: cover;
+    background-position: center left;
+    height: 100vh;
+    color: white;
+    font-size: 2.7rem;
+    }
+
+  .ipm2{
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    padding-top: 3rem;
+  }
+
+  .ipm2 img {
+    width: 15rem;
+    height: auto;
+  }
+
+  .ipm3 {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    align-self: end;
+    font-family: ntbold;
+  }
+
+  .ipm4{
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    font-size: 16rem;
+    font-family: ntbold;
+    margin-top: -4rem;
+  }
+
+  .bbg{
+    grid-column: 1 / 4;
+    grid-row: 4 / 5;
+    background-color: rgb(0, 54, 96);
+    align-self: end;
+  }
+
+  .ipm6{
+    grid-column: 2 / 3;
+    font-size: 2.8rem;
+    text-transform: uppercase;
+    display: inline-block;
+    margin: 0 2rem;
+  }
+
+
+  .sys1{
+    margin: 0 1rem;
+  }
+  .ag2 {
+    display:none;
+  }
+}
+
+@media screen and (device-aspect-ratio: 40/71){
+  
+  /* iPhone 5 only */
+  body{
+    -webkit-margin-before:0em;
+    -webkit-margin-after:0em;
+  }
+
+  .mainhead{
+    display: none;
+  }
+
+  .ipadhead{
+    display: grid;
+    grid-template-columns: repeat(3, 10% 80% 10%);
+    grid-gap: 0;
+    grid-auto-rows: minmax(0px, auto);
+    background-image: url('mbg.jpg');
+    background-size: contain;
+    height: 100vh;
+    color: white;
+    font-size: 2.7rem;
+    }
+
+  .ipm2{
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    padding-top: 3rem;
+  }
+
+  .ipm2 img {
+    width: 15rem;
+    height: auto;
+  }
+
+  .ipm3 {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    align-self: end;
+    font-family: ntbold;
+    font-size: 2rem;
+  }
+
+  .ipm4{
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    font-size: 12rem;
+    font-family: ntbold;
+    margin-top: -4rem;
+  }
+
+  .bbg{
+    grid-column: 1 / 4;
+    grid-row: 4 / 5;
+    background-color: rgb(0, 54, 96);
+    align-self: end;
+  }
+
+  .ipm6{
+    grid-column: 2 / 3;
+    /* grid-row: 5 / 6; */
+    font-size: 2.8rem;
+    text-transform: uppercase;
+    display: inline-block;
+    margin: 0 2rem;
+  }
+
+  p {
+    margin: 0;
+  }
+    
+  .boxA{
+    display: none;
+  }
+
+  .mboxA{
+    display: block;
+    background-image: url('mfcir.png');
+    color: white;
+  }
+
+  .mboxA img {
+    width: 30vw;
+    margin-top: 3vw;
+  }
+
+  .mboxA h2{
+    font-size: 3rem;
+  }
+
+  .mboxA p{
+    font-size: 2rem;
+    padding: 0 3rem 2rem 3rem;
+  }
+
+  .mboxB{
+    display: block;
+    background-color: rgb(128,154, 175);
+  }
+
+  .mboxB img{
+    width: 80vw;
+    padding-top: 3rem;
+  }
+
+  .box1{
+    display: none;
+  }
+
+  .mbox1{
+    display: block;
+    background-image: url('mfieldbg.png');
+    background: cover;
+    color: white;
+  }
+
+  .mbox1 img {
+    width: 30vw;
+    padding-top: 2vh;
+  }
+
+  .mbox1 h2{
+    font-size: 3rem;
+  }
+
+  .mbox1 p{
+    font-size: 2rem;
+    padding: 0 3rem 2rem 3rem;
+  }
+
+  .wrapper.simplify{
+    display: none;
+  }
+
+  .msimp{
+    display: block;
+    background-color: rgb(0, 54, 96);
+    color: white;
+    padding-bottom: 5rem;
+  }
+
+  .msimp h2{
+    font-size: 3rem;
+    font-weight: 300;
+    margin-top: 0vh;
+    padding-top: 4rem;
+  }
+
+  .msimp h4 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+  .msimp p{
+    font-size: 1.5rem;
+    margin: 0 5rem;
+  }
+
+  .msimp img {
+    width: 8rem;
+    margin: 5rem 0 2rem 0;
+  }
+
+  .msimp2 {
+    display: block;
+    background-image: url('mfieldroad.png');
+    background-size: 100%;
+    color:white;
+  }
+
+  .msimp2 h3{
+    font-size: 3rem;
+    margin-top: 0vh;
+    padding-top: 5rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+  }
+
+  .msimp2 p{
+    font-size: 1.5rem;
+    margin: 0 5rem;
+    padding-bottom: 2rem;
+  }
+    
+  .ag2{
+    padding: 2vh 2vw;
+    margin-top: 2vh;    
+  }
+
+  .wrap-sys{
+    display: none;
+  }
+
+  .mwrap{
+    background-color: rgb(0, 54, 96);
+    color: white;
+    display: block;
+  }
+
+  .mwrap h2{
+    font-size: 3rem;
+    margin-top: 0vh;
+    padding-top: 2vh;
+  }
+
+  .mwrap h4{
+    font-size: 2rem;
+    padding-top: 2vh;
+    margin: 0;
+  }
+
+  .mwrap p{
+    font-size: 1.5rem;
+    margin-top: .5rem;
+  }
+
+  .sys4 p {
+    padding-bottom: 2rem;
+  }
+
+  .fall h1{
+    font-size: 3rem;
+  }
+
+  .fall h3{
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (device-aspect-ratio: 71/40){
+  .box4 p{
+    font-size: 1.2rem;
+  }
+
+  .s5 p {
+    margin: 0;
+  }
+}
